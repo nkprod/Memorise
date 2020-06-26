@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct EmojiMemoryGameView: View {
+    var newElement = 10
+    var anotherNewElement = 11
     @ObservedObject var viewModel: EmojiMemoryGame
     var body: some View {
          HStack() {
