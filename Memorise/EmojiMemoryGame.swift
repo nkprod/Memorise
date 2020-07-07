@@ -17,7 +17,7 @@ class EmojiMemoryGame: ObservableObject {
     
     // static makes it possible to have a func assigned to the type "EmojiMemoryGame" and not its instance
     static func createMemoryGame() -> MemoryGame<String> {
-        var emojis: Array<String> = ["🥊","🥅", "🎱","🥊","🥅", "🎱"]
+        var emojis: Array<String> = ["🥊","🥅", "🎱"]
         return MemoryGame<String>(numberOfPairsOfCards: emojis.count) { pairIndex in
             let randomIndex = Int.random(in: 0..<emojis.count)
             let emoji = emojis[randomIndex]
